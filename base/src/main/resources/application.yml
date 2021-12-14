@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    com.dmyxs.springboot: trace
+  file:
+    path: D:\develop\back\back-language\java\java-project\logs/springboot.log
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8
+    username: root
+    password: abc123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/*Mapper.xml
+

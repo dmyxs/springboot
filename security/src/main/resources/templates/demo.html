@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    登录账号：<span sec:authentication="name"></span>
+    登录账号：<span sec:authentication="principal.username"></span>
+    登录账号：<span sec:authentication="credentials"></span>
+    登录账号：<span sec:authentication="details.remoteAddress"></span>
+</body>
+</html>

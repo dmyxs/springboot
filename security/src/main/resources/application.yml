@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dmyxs?characterEncoding=utf8
+    username: root
+    password: abc123456
+  thymeleaf:
+    mode: html
+    cache: false
+    encoding: utf-8
+    prefix: classpath:/templates/
+    suffix: .html
+#  mvc:
+#    servlet:
+#      path:
+#
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/*Mapper.xml
