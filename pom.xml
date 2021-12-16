@@ -23,6 +23,7 @@
         <module>oauth2</module>
         <module>mybatis</module>
         <module>mybatis-plus</module>
+        <module>springmvc</module>
     </modules>
 
     <properties>
